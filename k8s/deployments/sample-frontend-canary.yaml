@@ -3,11 +3,11 @@ apiVersion: apps/v1
 metadata:
   name: sample-frontend-canary
   labels:
-    app: sample-frontend-canary
+    app: sample
 spec:
   selector:
     matchLabels:
-      app: sample-frontend-canary
+      app: sample
   replicas: 1
   template:
     metadata:
