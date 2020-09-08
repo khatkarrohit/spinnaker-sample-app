@@ -1,9 +1,9 @@
 kind: Deployment
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 metadata:
   name: sample-backend-production
 spec:
-  replicas: 4
+  replicas: 2
   template:
     metadata:
       name: backend
