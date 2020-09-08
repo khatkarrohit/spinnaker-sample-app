@@ -2,7 +2,12 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: sample-frontend-canary
+  labels:
+    app: sample-frontend-canary
 spec:
+  selector:
+    matchLabels:
+      app: sample-frontend-canary
   replicas: 1
   template:
     metadata:

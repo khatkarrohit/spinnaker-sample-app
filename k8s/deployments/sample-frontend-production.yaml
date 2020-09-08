@@ -2,7 +2,12 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: sample-frontend-production
+  labels:
+    app: sample-frontend-production
 spec:
+  selector:
+    matchLabels:
+      app: sample-frontend-production
   replicas: 2
   template:
     metadata:
